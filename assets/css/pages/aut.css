@@ -1,0 +1,133 @@
+:root{
+    --background-color: #F2F2F2;
+    --background-color-2: #edf4ff;
+    --background-color-3: #435EBE;
+    --background-color-4: #1488DB;
+    --countdown-color: #864CC2;
+    --option-a-color: #E21C3D;
+    --option-b-color: #1369D0;
+    --option-c-color: #D99E02;
+    --option-d-color: #288A0E;
+    --text-white: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.main {
+    min-height: 100vh;
+    display: flex;
+}
+
+.register-bg{
+    background-color: var(--background-color-3);
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-bg img{
+    width: 80%;
+}
+
+.form {
+    width: 40%;
+    padding: 10px 80px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.form img{
+    width: 100px;
+}
+.form .heading {
+    font-size: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label,
+.form-message {
+    text-align: left;
+}
+
+.form-label {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.form-control {
+    /* height: 30px; */
+    padding: 5px 10px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.form-control:hover {
+    border-color: var(--background-color-4);
+}
+
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+
+.form-message {
+    font-size: 1rem;
+    padding: 4px 0 0;
+}
+
+.form-submit {
+    outline: none;
+    background-color: var(--background-color-4);
+    margin-top: 12px;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: #309ae6;
+}
+
+.spacer {
+    width: 100%;
+    height: 1.5px;
+    background-color: #b3b3b3;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+
+.link-login{
+    font-style: italic;
+}
+
+.link-login a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--background-color-4);
+}

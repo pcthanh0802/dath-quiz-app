@@ -1,0 +1,150 @@
+:root{
+    --background-color: #F2F2F2;
+    --background-color-2: #edf4ff;
+    --background-color-3: #435EBE;
+    --background-color-4: #1488DB;
+    --countdown-color: #864CC2;
+    --option-a-color: #E21C3D;
+    --option-b-color: #1369D0;
+    --option-c-color: #D99E02;
+    --option-d-color: #288A0E;
+    --text-white: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    /* background-color: var(--background-color); */
+    display: flex;
+    background-color: var(--background-color-3);
+    padding: 20px 20px;
+    gap: 20px;
+    justify-content: center;
+}
+
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #128ee7 !important;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+.create-quiz-box{
+    width: 60%;
+    min-height: 94vh;
+    background-color: var(--background-color-2);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.create-heading{
+    font-size: 2rem;
+}
+
+.create-quiz-box input{
+    width: 400px;
+    min-height: 30px;
+    padding: 5px;
+}
+
+.question-create-state{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0 0;
+}
+
+.question-form-create-box{
+    margin: 10px 0 10px 0;
+    padding: 30px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-form-quiz-gen{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+textarea[name=quiz-des-create]{
+    padding: 5px;
+    min-height: 70px;
+    width: 500px;
+}
+
+.question-form-create-box .question-form{
+    background-color: var(--text-white);
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.question-form-create-box .question-form .question-form-input-area,
+.question-form-create-box .question-form .question-form-choose-area{
+    background-color: var(--text-white);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quiz-create-button{
+    display: flex;
+    justify-content: none;
+    gap: 10px;
+}
+
+.quiz-create-button button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--background-color-4);
+    color: var(--text-white);
+    font-weight: bold;
+}
+
+.delete-question-btn{
+    grid-column-start: span 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+button[name=delete-question]{
+    padding: 10px;
+    background-color: var(--option-a-color);
+    font-weight: bold;
+    color: var(--text-white);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+button[name=delete-question]:hover{
+    background-color: #e9536c !important;
+}
+
+
