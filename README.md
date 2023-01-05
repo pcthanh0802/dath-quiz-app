@@ -11,7 +11,7 @@ This application is the Programming Integration Project of group 2 guided by Mr.
 
 ## Installation tutorial
 
-Since we do not deploy this web application on a remote host server, please follow this step in order to run our work locally on your computer:
+Since we do not deploy this web application on a remote host server, please follow these steps in order to run our work locally on your computer:
 
 1. Download and install XAMPP
 2. Download the source code from our Github repository (Download ZIP), extract the ZIP file, change the folder name to quizApp and move it into xampp/htdocs folder **(The source code folder must be stored here to run, other directories are not allowed.)**
