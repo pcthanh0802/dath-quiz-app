@@ -60,7 +60,7 @@
             <div class="result-question">
                 <div class="header">
                     <div class="question"><?=$question[$i]['content']?></div>
-                    <div class="image" title="Question Image"></div>
+                    <img class="question-body-img" title="Question Image" src="<?=($question[$i]['media']) ? $question[$i]['media'] : "../quizApp/assets/images/QIMG.png"?>" style="max-height:150px; max-width:200px; margin-inline: auto"></img>
                 </div>
                 <div class="option optionA <?=($question[$i]['isAnswer'])?"correct-ans":""?>">
                     <span>A.</span>
@@ -85,10 +85,10 @@
     <script src="../quizApp/assets/js/pages/result.js" defer></script>
 </body>
 <?php
-    unset($_SESSION['quest_num']);
-    unset($_SESSION['offset']);
-    unset($_SESSION['point']);
-    unset($_SESSION['playDateTime']);
-    unset($_SESSION['total_point']);
+    // unset($_SESSION['quest_num']);
+    // unset($_SESSION['offset']);
+    // unset($_SESSION['point']);
+    // unset($_SESSION['playDateTime']);
+    // unset($_SESSION['total_point']);
 ?>
 </html>

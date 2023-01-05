@@ -81,7 +81,7 @@
                     <div class="result-question">
                         <div class="header">
                             <div class="question"><?=$question[$i]['content']?> (<?=$question[$i]['point']?> points)</div>
-                            <div class="image" title="Question Image"></div>
+                            <img class="question-body-img" title="Question Image" src="<?=($question[$i]['media']) ? $question[$i]['media'] : "../quizApp/assets/images/QIMG.png"?>" style="max-height:150px; max-width:80vw; margin-inline: auto"></img>
                         </div>
                         <div class="option optionA <?=($question[$i]['isAnswer'])?"correct-ans":""?>">
                             <span>A.</span>

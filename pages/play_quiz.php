@@ -36,7 +36,7 @@
         
             <div class="question-body-box">
                 <div class="question-body-countdown"></div>
-                <div class="question-body-img" title="Question Image"></div>
+                <img class="question-body-img" title="Question Image" src="<?=($question[0]['media']) ? $question[0]['media'] : "../quizApp/assets/images/QIMG.png"?>" style="max-height:350px; max-width:80vw; margin-inline: auto"></img>
             </div>
         
             <div class="options-box">
