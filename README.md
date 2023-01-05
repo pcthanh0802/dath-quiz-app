@@ -15,9 +15,9 @@ Since we do not deploy this web application on a remote host server, please foll
 
 1. Download and install XAMPP
 2. Download the source code from our Github repository (Download ZIP), extract the ZIP file, change the folder name to quizApp and move it into xampp/htdocs folder **(The source code folder must be stored here to run, other directories are not allowed.)**
-3. Open XAMPP control panel and turn on Apache and MySQL
+3. Open XAMPP control panel.
 4. Click "Config" of MySQL, then click my.ini. A text editor appears on the screen. Change the port from 3306 to **3307**, save the file and close it.
-5. Click "Admin" button of MySQL to go to its dashboard
+5. Click "Start" for Apache and MySQL, then click "Admin" button of MySQL to go to its dashboard
 6. Create a database and named it "quizApp"
 7. Import db.sql file to create the database
 8. Open your web browser and type http://localhost/quizApp/index.php in the url bar to start the quiz app
